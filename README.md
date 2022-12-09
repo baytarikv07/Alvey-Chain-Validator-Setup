@@ -51,10 +51,23 @@ Once again NEVER SHARE YOUR PRIVATE KEY WITH ANYONE! You can import this private
 | Disk | <ul><li>10 GB root patition</li><li>30 GB root partition with LVM for disk extension</li></ul> | <ul><li>Size of the blockchain state</li></ul>
 
 
+BASİC
 
 
 
-
+1) connect to your server
+* be sure you have git installed (to check run: git --version)
+2) git clone https://github.com/AlveyCoin/validator.git
+3) cd validator/
+4) chmod +x init_validator.sh
+5) chmod +x start_validator.sh
+6) ./init_validator.sh
+* if you have an error and empty Private Key
+** cat: data-dir/consensus/validator.key: No such file or directory
+Private Key =
+6-b) ./alveychain/alvey secrets init --data-dir data-dir
+* it will print your keys (Save them!!!)
+7) ./start_validator.sh
 
 
 
